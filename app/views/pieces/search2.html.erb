@@ -1,0 +1,12 @@
+<h2>Search for Pieces - Step 2</h2>
+
+<h3>You are working in Book <%= @current_book %></h3>
+
+<%= form_tag("/pieces/search3") do %>
+  <%= label_tag "current_piece", "What piece are you currently on?" %>
+  <%= select_tag "current_piece", options_from_collection_for_select(@pieces, :id, :title), autofocus: true %>
+
+  <p><%= submit_tag "Next ->" %></p>
+<% end %>
+
+<%= link_to "View All Pieces", pieces_path %>

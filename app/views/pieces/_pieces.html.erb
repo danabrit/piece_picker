@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Book</th>
+      <th>Title</th>
+      <th>Composer name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pieces.each do |piece| %>
+      <tr>
+        <td><%= piece.book %></td>
+        <td><%= piece.title %></td>
+        <td><%= piece.composer_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

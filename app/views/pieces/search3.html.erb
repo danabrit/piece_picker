@@ -1,0 +1,12 @@
+<h2>Search for Pieces - Step 3</h2>
+
+<%= form_tag("/pieces/search_results") do %>
+  <%= hidden_field_tag "current_piece_id", @current_piece.id %>
+
+  <%= label_tag "results_count", "How many pieces do you want to practice?" %>
+  <%= select_tag "results_count", options_for_select(1..@pieces_known), autofocus: true %>
+
+  <p><%= submit_tag "Find My Pieces ->" %></p>
+<% end %>
+
+<%= link_to "View All Pieces", pieces_path %>

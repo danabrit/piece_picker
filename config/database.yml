@@ -1,0 +1,14 @@
+production:
+  url: <%= ENV['DATABASE_URL'] %>
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS', 5).to_i %>
+
+development:
+  adapter: postgresql
+  database: piece_picker_development
+  host: localhost
+  pool: 30
+
+test: &test
+  adapter: postgresql
+  database: piece_picker_test
+  host: localhost

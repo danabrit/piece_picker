@@ -1,0 +1,14 @@
+<p>Welcome to Piece Picker!</p>
+
+<p>This site was designed by and for Suzuki students to help them quickly and easily choose pieces to practice.</p>
+
+<h2>Search for Pieces - Step 1</h2>
+
+<%= form_tag("/pieces/search2") do %>
+  <%= label_tag "book", "What book are you currently on?" %>
+  <%= select_tag "book", options_for_select((1..4)), autofocus: true %>
+
+  <p><%= submit_tag "Next ->" %></p>
+<% end %>
+
+<%= link_to "View All Pieces", pieces_path %>
