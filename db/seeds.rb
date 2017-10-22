@@ -1,10 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Piece.destroy_all
+
 PIECES = [
   # BOOK 1
   {title: "Twinkle, Twinkle, Little Star Variations", composer_name: "Suzuki", book: 1, ordinal: 1},
@@ -52,7 +47,15 @@ PIECES = [
   {title: "Concerto No. 6, 1st movement", composer_name: "Vivaldi", book: 4, ordinal: 4},
   {title: "Concerto No. 6, 3rd movement", composer_name: "Vivaldi", book: 4, ordinal: 5},
   {title: "Perpetual Motion", composer_name: "Bohm", book: 4, ordinal: 6},
-  {title: "Concerto for Two Violins", composer_name: "Bach", book: 4, ordinal: 7}
+  {title: "Concerto for Two Violins, Violin II", composer_name: "Bach", book: 4, ordinal: 7},
+  # BOOK 5
+  {title: "Gavotte", composer_name: "Bach", book: 5, ordinal: 1},
+  {title: "Concerto No. 6, 2nd movement", composer_name: "Vivaldi", book: 5, ordinal: 2},
+  {title: "Concerto in G Minor", composer_name: "Vivaldi", book: 5, ordinal: 3},
+  {title: "Country Dance", composer_name: "von Weber", book: 5, ordinal: 4},
+  {title: "German Dance", composer_name: "Dittersdorf", book: 5, ordinal: 5},
+  {title: "Gigue", composer_name: "Veracini", book: 5, ordinal: 6},
+  {title: "Concerto for Two Violins, Violin I", composer_name: "Bach", book: 5, ordinal: 7},
 ]
 
 PIECES.each do |piece|
