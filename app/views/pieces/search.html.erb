@@ -6,7 +6,7 @@
 
 <%= form_tag("/pieces/search2") do %>
   <%= label_tag "book", "What book are you currently on?" %>
-  <%= select_tag "book", options_for_select((1..5)), autofocus: true %>
+  <%= select_tag "book", options_for_select((1..8)), autofocus: true %>
 
   <p><%= submit_tag "Next ->" %></p>
 <% end %>
