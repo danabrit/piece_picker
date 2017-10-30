@@ -89,7 +89,7 @@ PIECES = [
   {title: "Tambourin", composer_name: "Grétry", book: 8, ordinal: 5},
   {title: "Largo from Sonata No 3 in C Major", composer_name: "Bach", book: 8, ordinal: 6},
   {title: "Preludio from Sonata in E Minor", composer_name: "Bach", book: 8, ordinal: 7},
-  {title: "Largo Expressivo", composer_name: "Pugnani", book: 8, ordinal: 8},
+  {title: "Largo Espressivo", composer_name: "Pugnani", book: 8, ordinal: 8},
   {title: "Sonata in E Minor, I. Largo", composer_name: "Veracini", book: 8, ordinal: 9},
   {title: "Sonata in E Minor, II. Allegro con fuoco", composer_name: "Veracini", book: 8, ordinal: 10},
   {title: "Sonata in E Minor, III. Minuet/Gavotte", composer_name: "Veracini", book: 8, ordinal: 11},
